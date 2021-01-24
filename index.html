@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/WeatherUX/styles.css">
+	<link rel="stylesheet" href="/WeatherUX/weather-icons-master/css/weather-icons.css">
+	<title>Weather UX</title>
+</head>
+
+<body>
+
+	<header class="nav">
+		<div class="nav-date">Monday, January 18 2021</div>
+		<input type="text" class="nav-input" placeholder="Search for a city...">
+	</header>
+	
+	<main class="container">
+
+		<section class="current-weather">
+			<div class="city">Paris, FR</div>
+
+			<section class="current-weather-data">
+				<div class="weather-main">
+					<h1 class="temp">55 <span>°F</span></h1>
+					<p class="weather-type">Cloudy</p>
+				</div>
+				<div class="weather-subdata">
+					<div class="high-low-div">
+						<p class="high-low-title">Today's Range</p>
+						<p class="high-low">43°F / 60°F</p>
+					</div>
+					<div class="wind-speed-div">
+						<p class="wind-speed-title">Wind Speed</p>
+						<p class="wind-speed"><i class="wi wi-strong-wind"></i> 30 Mph</p>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="forecast">
+			<div class="forecast-day-one">
+				<h2 class="day-one-name">Monday</h2>
+				<div class="icon-1"><img src="/WeatherUX/icons/09d.png" class="icon"></div>
+				<p class="forecast-temp day-one-temp">32°</p>
+				<p class="forecast-weather forecast-weather-one">Rain</p>
+			</div>
+
+			<div class="forecast-day-two">
+				<h2 class="day-two-name">Tuesday</h2>
+				<div class="icon-2"><img src="/WeatherUX/icons/01d.png" class="icon"></div>
+				<p class="forecast-temp day-two-temp">65°</p>
+				<p class="forecast-weather forecast-weather-two">Sunny</p>
+			</div>
+
+			<div class="forecast-day-three">
+				<h2 class="day-three-name">Wednesday</h2>
+				<div class="icon-3"><img src="/WeatherUX/icons/04n.png" class="icon"></div>
+				<p class="forecast-temp day-three-temp" class="icon">71°</p>
+				<p class="forecast-weather forecast-weather-three">Cloudy</p>
+			</div>
+
+			<div class="forecast-day-four">
+				<h2 class="day-four-name">Thursday</h2>
+				<div class="icon-4"><img src="/WeatherUX/icons/03d.png" class="icon"></div>
+				<p class="forecast-temp day-four-temp">59°</p>
+				<p class="forecast-weather forecast-weather-four">Storm</p>
+			</div>
+
+			<div class="forecast-day-five">
+				<h2 class="day-five-name">Friday</h2>
+				<div class="icon-5"><img src="/WeatherUX/icons/13d.png" class="icon"></div>
+				<p class="forecast-temp day-five-temp">18°</p>
+				<p class="forecast-weather forecast-weather-five">Snow</p>
+			</div>
+		</section>
+
+	</main>
+
+<script src="/WeatherUX/apps.js"></script>
+</body>
+</html>
