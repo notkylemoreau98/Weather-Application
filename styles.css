@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("/WeatherUX/WeatherBackgroundIdea.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  /* background: cornsilk; */
+  background: #0e3449;
+  margin: 0 2em;
+  border-radius: 8px;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.3);
+  opacity: 0.85;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0e3449;
+  color: #fff;
+  height: 2.5em;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav .nav-date {
+  margin-right: 1em;
+}
+
+.nav .nav-input {
+  height: 2.5em;
+  width: 35%;
+  opacity: 0.6;
+}
+
+.nav .nav-input:focus {
+  opacity: 0.9;
+}
+
+.current-weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1.5em auto 1em auto;
+  color: white;
+}
+
+.current-weather .city {
+  font-size: 40px;
+  border-bottom: 0.15em solid #fff;
+  border-radius: 6px 6px;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.current-weather-data {
+  font-size: 20px;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.current-weather-data .temp {
+  font-size: 4em;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.current-weather-data .weather-type {
+  margin-bottom: 0.25em;
+  font-weight: 300;
+  font-size: 1.25em;
+}
+
+.current-weather-data .weather-subdata {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  background: linear-gradient(#fff, #fff) center/2px 100% no-repeat;
+}
+
+.current-weather-data .high-low-title,
+.current-weather-data .wind-speed-title {
+  font-weight: 600;
+  margin: 0.25em auto;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 16px;
+  background: #f4f4f4;
+  border-radius: 0px 0px 8px 8px;
+  padding: 0.25em 0 1em 0;
+}
+
+.forecast h2 {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+.forecast .forecast-weather {
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.forecast .forecast-temp {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.forecast .icon {
+  height: 5em;
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin-bottom: 1em;
+  }
+
+  .nav .nav-date {
+    display: none;
+  }
+
+  .nav .nav-input {
+    width: 80%;
+  }
+
+  .current-weather .city {
+    font-size: 28px;
+  }
+
+  .current-weather .temp {
+    font-size: 50px;
+  }
+
+  .current-weather-data {
+    font-size: 12px;
+  }
+
+  .forecast {
+    font-size: 10px;
+  }
+}
