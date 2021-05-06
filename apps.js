@@ -36,7 +36,7 @@ function displayCurrentResults(weather) {
 	temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F</span>`
 	weatherType.innerText = weather.weather[0].main;
 	highLow.innerText = `${Math.round(weather.main.temp_min)}°F / ${Math.round(weather.main.temp_max)}°F`
-	wind.innerText = `${Math.round(weather.wind.speed)} Mph`
+	wind.innerHTML = `<i class="fas fa-wind"></i> ${Math.round(weather.wind.speed)} Mph`
 };
 
 function getForecast(query) {
