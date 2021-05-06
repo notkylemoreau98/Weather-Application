@@ -9,7 +9,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 const api = {
-	key: "785ca801015ed2e7c71e74dc9667b5c5",
+	key: "fbab35c7a46eeb8b49c815d43a8a4c04",
 	base: "https://api.openweathermap.org/data/2.5/"
 }
 
