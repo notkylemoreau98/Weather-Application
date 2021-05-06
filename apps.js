@@ -62,7 +62,7 @@ function displayForecast(forecast) {
 	dayOneName.innerText = updateForecastDay(now); 
 	dayOneTemp.innerText = `${Math.round(forecast.list[0].main.temp)}°`;
 	dayOneWeather.innerText = forecast.list[0].weather[0].description;
-	dayOneIcon.innerHTML = `<img src="github.com/notkylemoreau98/Weather-Application/tree/main/Icons/${forecast.list[0].weather[0].icon}.png" class="icon" />`; 
+	dayOneIcon.innerHTML = `<img src="/Icons/${forecast.list[0].weather[0].icon}.png" class="icon" />`; 
 
 	// Day Two
 	const dayTwoName = document.querySelector('.forecast__dayTwoName');
@@ -73,7 +73,7 @@ function displayForecast(forecast) {
 	dayTwoName.innerText = updateForecastDay(now);
 	dayTwoTemp.innerText = `${Math.round(forecast.list[1].main.temp)}°`;
 	dayTwoWeather.innerText = forecast.list[1].weather[0].description;
-	dayTwoIcon.innerHTML = `<img src="./Icons/${forecast.list[1].weather[0].icon}.png" class="icon" />`; 
+	dayTwoIcon.innerHTML = `<img src="/Icons/${forecast.list[1].weather[0].icon}.png" class="icon" />`; 
 
 
 	// Day Three
@@ -85,7 +85,7 @@ function displayForecast(forecast) {
 	dayThreeName.innerText = updateForecastDay(now);
 	dayThreeTemp.innerText = `${Math.round(forecast.list[2].main.temp)}°`;
 	dayThreeWeather.innerText = forecast.list[2].weather[0].description;
-	dayThreeIcon.innerHTML = `<img src="./Icons/${forecast.list[2].weather[0].icon}.png" class="icon" />`; 
+	dayThreeIcon.innerHTML = `<img src="/Icons/${forecast.list[2].weather[0].icon}.png" class="icon" />`; 
 
 
 	// Day Four
@@ -97,7 +97,7 @@ function displayForecast(forecast) {
 	dayFourName.innerText = updateForecastDay(now);
 	dayFourTemp.innerText = `${Math.round(forecast.list[3].main.temp)}°`;
 	dayFourWeather.innerText = forecast.list[3].weather[0].description;
-	dayFourIcon.innerHTML = `<img src="./Icons/${forecast.list[3].weather[0].icon}.png" class="icon" />`; 
+	dayFourIcon.innerHTML = `<img src="/Icons/${forecast.list[3].weather[0].icon}.png" class="icon" />`; 
 
 	// Day Five
 	const dayFiveName = document.querySelector('.forecast__dayFiveName');
@@ -108,7 +108,7 @@ function displayForecast(forecast) {
 	dayFiveName.innerText = updateForecastDay(now);
 	dayFiveTemp.innerText = `${Math.round(forecast.list[4].main.temp)}°`;
 	dayFiveWeather.innerText = forecast.list[4].weather[0].description;
-	dayFiveIcon.innerHTML = `<img src="./Icons/${forecast.list[4].weather[0].icon}.png" class="icon" />`; 
+	dayFiveIcon.innerHTML = `<img src="/Icons/${forecast.list[4].weather[0].icon}.png" class="icon" />`; 
 };
 
 function dateBuilder(d) {
