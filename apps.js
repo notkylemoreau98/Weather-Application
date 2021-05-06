@@ -124,4 +124,4 @@ function updateForecastDay(d) {
 	}
 };
 
-input.addEventListener('keypress', setQuery);
+input.addEventListener('input', setQuery);
