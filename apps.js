@@ -62,7 +62,7 @@ function displayForecast(forecast) {
 	dayOneName.innerText = updateForecastDay(now); 
 	dayOneTemp.innerText = `${Math.round(forecast.list[0].main.temp)}°`;
 	dayOneWeather.innerText = forecast.list[0].weather[0].description;
-	dayOneIcon.innerText = `<img src="/Icons/${forecast.list[0].weather[0].icon}.png" class="icon" />`; 
+	dayOneIcon.innerHTML = `<img src="/Icons/${forecast.list[0].weather[0].icon}.png" class="icon" />`; 
 
 	// Day Two
 	const dayTwoName = document.querySelector('.forecast__dayTwoName');
