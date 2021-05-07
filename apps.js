@@ -63,7 +63,9 @@ function displayForecast(forecast) {
 	dayOneTemp.innerText = `${Math.round(forecast.list[0].main.temp)}°`;
 	dayOneWeather.innerText = forecast.list[0].weather[0].description;
 	console.log(forecast.list[0].weather[0].icon)
-	dayOneIcon.innerHTML = `<img src="/Icons/${forecast.list[0].weather[0].icon}.png" class="icon" />`; 
+	dayOneIcon.innerHTML = `<img src="./Images/WeatherBackground.jpg" class="icon" />`; 
+	
+// 	/Icons/${forecast.list[0].weather[0].icon}.png
 
 	// Day Two
 	const dayTwoName = document.querySelector('.forecast__dayTwoName');
