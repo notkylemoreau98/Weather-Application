@@ -63,7 +63,7 @@ function displayForecast(forecast) {
 	dayOneTemp.innerText = `${Math.round(forecast.list[0].main.temp)}°`;
 	dayOneWeather.innerText = forecast.list[0].weather[0].description;
 	console.log(forecast.list[0].weather[0].icon)
-	dayOneIcon.innerHTML = `<img src="Icons/${forecast.list[0].weather[0].icon}.png" class="icon" />`; 
+	dayOneIcon.innerHTML = `<img src="/Icons/${forecast.list[0].weather[0].icon}.png" class="icon" />`; 
 	
 // 	/Icons/${forecast.list[0].weather[0].icon}.png
 
@@ -76,7 +76,7 @@ function displayForecast(forecast) {
 	dayTwoName.innerText = updateForecastDay(now);
 	dayTwoTemp.innerText = `${Math.round(forecast.list[1].main.temp)}°`;
 	dayTwoWeather.innerText = forecast.list[1].weather[0].description;
-	dayTwoIcon.innerHTML = `<img src="Icons/${forecast.list[1].weather[0].icon}.png" class="icon" />`; 
+	dayTwoIcon.innerHTML = `<img src=".Icons/${forecast.list[1].weather[0].icon}.png" class="icon" />`; 
 
 
 	// Day Three
