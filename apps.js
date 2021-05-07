@@ -50,7 +50,6 @@ function getForecast(query) {
 };
 
 function displayForecast(forecast) {
-	console.log(forecast);	
 	let now = new Date();
 
 	// Day One
