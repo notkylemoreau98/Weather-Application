@@ -57,7 +57,7 @@ function displayForecast(forecast) {
 	const dayOneName = document.querySelector('.forecast__dayOneName');
 	const dayOneTemp = document.querySelector('.forecast__dayOneTemp');
 	const dayOneWeather = document.querySelector('.forecast__weatherOne');
-	const dayOneIcon = document.querySelector('.icon-1');
+	const dayOneIcon = document.getElementById('icon-1');
 	now.setDate(now.getDate() + 1);
 	dayOneName.innerText = updateForecastDay(now); 
 	dayOneTemp.innerText = `${Math.round(forecast.list[0].main.temp)}°`;
@@ -71,7 +71,7 @@ function displayForecast(forecast) {
 	const dayTwoName = document.querySelector('.forecast__dayTwoName');
 	const dayTwoTemp = document.querySelector('.forecast__dayTwoTemp');
 	const dayTwoWeather = document.querySelector('.forecast__weatherTwo');
-	const dayTwoIcon = document.querySelector('.icon-2');
+	const dayTwoIcon = document.getElementById('icon-2');
 	now.setDate(now.getDate() + 1);
 	dayTwoName.innerText = updateForecastDay(now);
 	dayTwoTemp.innerText = `${Math.round(forecast.list[1].main.temp)}°`;
@@ -83,7 +83,7 @@ function displayForecast(forecast) {
 	const dayThreeName = document.querySelector('.forecast__dayThreeName');
 	const dayThreeTemp = document.querySelector('.forecast__dayThreeTemp');
 	const dayThreeWeather = document.querySelector('.forecast__weatherThree');
-	const dayThreeIcon = document.querySelector('.icon-3');
+	const dayThreeIcon = document.getElementById('icon-3');
 	now.setDate(now.getDate() + 1);
 	dayThreeName.innerText = updateForecastDay(now);
 	dayThreeTemp.innerText = `${Math.round(forecast.list[2].main.temp)}°`;
@@ -95,7 +95,7 @@ function displayForecast(forecast) {
 	const dayFourName = document.querySelector('.forecast__dayFourName');
 	const dayFourTemp = document.querySelector('.forecast__dayFourTemp');
 	const dayFourWeather = document.querySelector('.forecast__weatherFour');
-	const dayFourIcon = document.querySelector('.icon-4');
+	const dayFourIcon = document.getElementById('icon-4');
 	now.setDate(now.getDate() + 1)
 	dayFourName.innerText = updateForecastDay(now);
 	dayFourTemp.innerText = `${Math.round(forecast.list[3].main.temp)}°`;
@@ -106,7 +106,7 @@ function displayForecast(forecast) {
 	const dayFiveName = document.querySelector('.forecast__dayFiveName');
 	const dayFiveTemp = document.querySelector('.forecast__dayFiveTemp');
 	const dayFiveWeather = document.querySelector('.forecast__weatherFive');
-	const dayFiveIcon = document.querySelector('.icon-5');
+	const dayFiveIcon = document.getElementById('icon-5');
 	now.setDate(now.getDate() + 1)
 	dayFiveName.innerText = updateForecastDay(now);
 	dayFiveTemp.innerText = `${Math.round(forecast.list[4].main.temp)}°`;
