@@ -63,7 +63,7 @@ function displayForecast(forecast) {
 	dayOneTemp.innerText = `${Math.round(forecast.list[0].main.temp)}°`;
 	dayOneWeather.innerText = forecast.list[0].weather[0].description;
 	console.log(forecast.list[0].weather[0].icon)
-	dayOneIcon.innerHTML = `<img src="https://github.com/notkylemoreau98/Weather-Application/blob/main/Icons/${forecast.list[0].weather[0].icon}.png" class="icon" />`; 
+	dayOneIcon.innerHTML = `<img src="./Weather-Application/blob/main/Icons/${forecast.list[0].weather[0].icon}.png" class="icon" />`; 
 	
 // 	/Icons/${forecast.list[0].weather[0].icon}.png
 
