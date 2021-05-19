@@ -140,7 +140,6 @@ body {
   bottom: 1.25rem;
 }
 
-/* Change the mobile look, looks weird imo */
 @media only screen and (max-width: 850px) {
   .weather__city {
     font-size: 4.25rem;
@@ -223,5 +222,9 @@ body {
 
   .forecast {
     font-size: 0.7rem;
+  }
+  
+   .forecast__dayFive {
+    display: none;
   }
 }
