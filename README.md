@@ -2,7 +2,7 @@
 
 ## Description
 
-    This weather forecasting application was built with vanilla JavaScript and has the ability to get both current weather data and forecasted weather data for nearly every city in the world. The data returned is fetched the OpenWeatherMap API.
+This weather forecasting application was built with vanilla JavaScript and has the ability to get both current weather data and forecasted weather data for nearly every city in the world. The data returned is fetched the OpenWeatherMap API.
 
 ## Purpose
 
