@@ -14,6 +14,6 @@ To retrieve weather data, type any city into the input at the top of the page an
 
 ## API
 
-    	This application uses the OpenWeatherMap API.
+This application uses the OpenWeatherMap API.
 
-    				Information about there API can be found here: https://openweathermap.org/api
+Information about there API can be found here: https://openweathermap.org/api
