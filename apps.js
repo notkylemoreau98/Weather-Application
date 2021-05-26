@@ -16,6 +16,11 @@ const api = {
 
 input.addEventListener('keypress', setQuery);
 
+const currentDate = (function getCurrentDate() {
+	let now = new Date();
+	date.innerText = dateBuilder(now);
+})();
+
 function setQuery(e) {
 		if(e.keyCode === 13) {
 			getCurrentResults(input.value);
@@ -34,8 +39,6 @@ function getCurrentResults(query) {
 function displayCurrentResults(weather) {
 	console.log(weather);
 	city.innerText = `${weather.name}, ${weather.sys.country}`;
-	let now = new Date();
-	date.innerText = dateBuilder(now);
 	temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F</span>`
 	weatherType.innerText = weather.weather[0].main;
 	highLow.innerText = `${Math.round(weather.main.temp_min)}°F / ${Math.round(weather.main.temp_max)}°F`
