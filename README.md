@@ -4,6 +4,8 @@
 
 This weather forecasting application was built with vanilla JavaScript and has the ability to get both current weather data and forecasted weather data for nearly every city in the world. The data returned is fetched the OpenWeatherMap API.
 
+View the live site here: https://findmyforecast.com/
+
 ## Purpose
 
 The purpose behind creating this project was to strengthen my knowledge of the fetch function in JavaScript. In order to become more comfortable with using get requests to display information, all of the information on the page is retrieved dynamically. This project taught me a lot about updating a layout to deal with different lengths of information as well solidified my skills with DOM manipulation.
