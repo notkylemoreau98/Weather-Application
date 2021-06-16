@@ -11,7 +11,7 @@ body {
   width: 100%;
   font-size: 24px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: url("/Images/WeatherBackground.jpg");
+  background: url("/Images/WeatherBackground-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
