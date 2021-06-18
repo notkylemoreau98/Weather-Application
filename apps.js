@@ -1,11 +1,5 @@
 const input = document.querySelector('.nav__input');
 const date = document.querySelector('.nav__date');
-const city = document.querySelector('.weather__city');
-const temp = document.querySelector('.weather__temp');
-const weatherType = document.querySelector('.weather__type');
-const highLow = document.querySelector('.weather__highLow');
-const wind = document.querySelector('.weather__windSpeed');
-
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
@@ -37,6 +31,12 @@ function getCurrentResults(query) {
 };
 
 function displayCurrentResults(weather) {
+	const city = document.querySelector('.weather__city');
+	const temp = document.querySelector('.weather__temp');
+	const weatherType = document.querySelector('.weather__type');
+	const highLow = document.querySelector('.weather__highLow');
+	const wind = document.querySelector('.weather__windSpeed');
+	
 	console.log(weather);
 	city.innerText = `${weather.name}, ${weather.sys.country}`;
 	temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F</span>`
