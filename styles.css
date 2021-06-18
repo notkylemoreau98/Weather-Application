@@ -140,6 +140,13 @@ body {
   bottom: 1.25rem;
 }
 
+.forecast__divider {
+  height: 75%;
+  width: 2px;
+  background: #d3d3d3;
+  opacity: 0.4;
+}
+
 @media only screen and (max-width: 850px) {
   .weather__city {
     font-size: 4.25rem;
@@ -201,18 +208,22 @@ body {
 }
 
 @media only screen and (max-width: 432px) {
+   body {
+    height: fit-content;
+  }
+  
   .container {
     margin: 1rem 5px;
   }
 
   .weather {
-    height: 40vh;
+    height: 50vh;
     flex-direction: column;
     padding-top: 2.5rem;
   }
 
   .weather__city {
-    font-size: 2.75rem;
+    font-size: 3.5rem;
   }
 
   .weather__data .weather__temp {
@@ -221,10 +232,13 @@ body {
   }
 
   .forecast {
-    font-size: 0.7rem;
+   font-size: 1rem;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   
-   .forecast__dayFive {
+  .forecast__divider {
     display: none;
   }
 }
