@@ -16,7 +16,7 @@ const api = {
 
 input.addEventListener('keypress', setQuery);
 
-const currentDate = (function getCurrentDate() {
+(function getCurrentDate() {
 	let now = new Date();
 	date.innerText = dateBuilder(now);
 })();
