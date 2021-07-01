@@ -25,7 +25,7 @@ function dateBuilder(d) {
 };
 
 function setQuery(e) {
-		if(e.keyCode === 13) {
+		if(e.key === "Enter") {
 			getCurrentResults(input.value);
 			getForecast(input.value);
 			input.value = '';
