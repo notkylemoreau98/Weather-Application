@@ -15,6 +15,15 @@ input.addEventListener('keypress', setQuery);
 	date.innerText = dateBuilder(now);
 })();
 
+function dateBuilder(d) {
+	let day = days[d.getDay()];
+	let date = d.getDate();
+	let month = months[d.getMonth()];
+	let year = d.getFullYear();
+
+	return `${day}, ${month} ${date} ${year}`;
+};
+
 function setQuery(e) {
 		if(e.keyCode === 13) {
 			getCurrentResults(input.value);
@@ -113,15 +122,6 @@ function displayForecast(forecast) {
 	dayFiveWeather.innerText = forecast.list[4].weather[0].description;
 	dayFiveIcon.innerHTML = `<img src="./Icons/${forecast.list[4].weather[0].icon}.png" class="icon" />`; 
 };
-
-function dateBuilder(d) {
-	let day = days[d.getDay()];
-	let date = d.getDate();
-	let month = months[d.getMonth()];
-	let year = d.getFullYear();
-
-	return `${day}, ${month} ${date} ${year}`;
-}
 
 function updateForecastDay(d) {
 	for (let i = 0; i < 5; i++) {
